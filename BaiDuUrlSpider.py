@@ -1,4 +1,8 @@
 #coding:utf-8
+#!/usr/bin/env python
+# code by aedoo
+# github: https://github.com/aedoo/
+
 import requests,Queue,sys,threading,time
 from bs4 import BeautifulSoup
 import re
@@ -71,7 +75,7 @@ def main():
     else:
         keyword = sys.argv[1]
 
-        for i in range(0,350,10):   #百度默认最多75页,每页10个,根据规则定义的
+        for i in range(0,750,10):   #百度默认最多75页,每页10个,根据规则定义的
             url_start = 'https://www.baidu.com/s?wd=' + keyword + '&rn=10&pn='  #拼接百度搜索的URL
             url = url_start+str(i)
             queue.put(url)
