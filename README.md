@@ -1,6 +1,6 @@
 # BaiDuUrlSpider #
 
-## 百度URL采集工具 1.0##
+## 百度URL采集工具 1.0
 
 
 工具说明：百度URL采集工具，可自行修改线程；未加入去重复；使用后在同目录下生成`home_url.txt`和`original_url.txt`两个文件，前一个文件是域名列表，后一个是采集到的url列表.
